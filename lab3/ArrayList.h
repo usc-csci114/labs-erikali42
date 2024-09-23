@@ -68,4 +68,10 @@ bool ArrayList<T>::empty()
 {
 	
 }
+
+template <typename T>
+void ArrayList<T>::resize()
+{
+	
+}
 #endif
