@@ -20,6 +20,9 @@ void printList(List<T>& list)
 int main(int argc, char* argv[])
 {
 	ArrayList<int> list;
+	//or LinkedList<int> list;
+	//this is an example of inheritance. We can update our code
+	//to use a different list by changing one line of code.
 	
 	cout << "List is size: " << list.size() << endl;
 	cout << boolalpha << "List.empty() is " << list.empty() << endl;

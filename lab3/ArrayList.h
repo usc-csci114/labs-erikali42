@@ -10,6 +10,7 @@ public:
 	void append(T v);
 	void insert(size_t idx, T v);
 	T at(size_t idx);
+	void set(T v);
 	void remove(size_t idx);
 	size_t find(T v);
 	size_t size();
@@ -47,10 +48,17 @@ T ArrayList<T>::at(size_t idx)
 }
 
 template <typename T>
+void ArrayList<T>::set(T v)
+{
+	
+}
+
+template <typename T>
 void ArrayList<T>::remove(size_t idx)
 {
 	
 }
+
 template <typename T>
 size_t ArrayList<T>::find(T v)
 {

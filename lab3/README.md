@@ -69,3 +69,42 @@ private:
 
 Implement the member functions in the skeleton code. Use the test code given (or add your own) to test your list.
 
+### Linked List
+
+For the second part of this lab we will be implementing a Linked List version of the List ADT. Linked lists maintian a list by using a node (or item) type that has a pointer to the 'next' item in the list. The top-level class keeps a head and tail pointer to the start and end of the list respectively.
+
+![](./ll.png)
+
+The linked list definition:
+
+```c++
+template <typename T>
+class Node {
+	T value;
+	Node* next;
+};
+
+template <typename T>
+class LinkedList : public List<T> {
+public:
+	LinkedList();
+	void append(T v);
+	void insert(size_t idx, T v);
+	T at(size_t idx);
+	void set(T v);
+	void remove(size_t idx);
+	size_t find(T v);
+	size_t size();
+	bool empty();
+
+private:
+
+	size_t m_size;
+	Node<T>* head;
+	Node<T>* tail;
+};
+```
+We can see that the linked list implementation implements the same ADT interface as the ArrayList, but with different private data members.
+
+#### Your Task
+Implement the functions in the `LinkedList.h` header file
