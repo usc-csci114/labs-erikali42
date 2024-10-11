@@ -469,5 +469,3 @@ int writeGSBMP(const char* filename, unsigned char **outputImage,int height,int 
 	fclose(file);
 	return 0;
 }
-
-
