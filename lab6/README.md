@@ -47,9 +47,18 @@ Write a program that does a simple linear regression on the `gpa_sat.csv` data.
 * Calculate the mean of the x values and the mean of the y values
 * Use the x-mean, y-mean and the data points to calulate β (beta)
 * Use the x-mean, y-mean and β  to calculate ⍺ (alpha)
-* Print out a message with the model the equation predicts: "SAT score = {alpha} + {beta}*GPA" replacing {alpha} and {beta} with the values you calculated.
+
 
 Now we need to calcuate the R-squared value
 
-*  
+*  First we need to calculate the 𝑓i data points. These points represent the values predicted by the model for the xi's in the input data.
+*  Create a vector to store the 𝑓i values. Iterate through the xi values and use the model (linear equation with ⍺ and β) to generate the 𝑓i's
+*  Use the yi's and the 𝑓i's to calculate SSres
+*  Use the yi's and the y-mean to calculate SStot
+*  Calculate R-squared = 1 - SSres/SStot
+
+Now print out the results of your linear regression
+
+* Print out a message with the model the equation predicts: "SAT score = {alpha} + {beta}*GPA" replacing {alpha} and {beta} with the values you calculated.
+* Print out the R-squared value
 
