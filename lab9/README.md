@@ -134,12 +134,7 @@ Insert a key, value pair into the hash table.
 template <typename K, typename V>
 V HashTable<K,V>::find(K key)
 {
-	size_t index = hash(key) % table.size();
-	if(table[index].count(key) > 0 )
-	{
-		return table[index][key];
-	}
-	throw std::range_error("Key not found.");
+
 }
 ```
 
@@ -156,15 +151,7 @@ Find and return the value for a given key.
 template <typename K, typename V>
 void HashTable<K,V>::remove(K key)
 {
-	size_t index = hash(key) % table.size();
-	if(table[index].count(key) > 0 )
-	{
-		table[index].erase(key);
-		size_--;
-	}
-	else {
-		throw std::range_error("Key not found.");
-	}	
+		
 }
 ```
 
