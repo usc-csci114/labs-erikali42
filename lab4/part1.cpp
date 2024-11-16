@@ -16,6 +16,6 @@ int main(){
 		v.insert(v.begin(),42);
 		const auto end = std::chrono::steady_clock::now();
 		const std::chrono::duration<double> diff = end - start;
-		cout << "Inserting at v.begin() for size " << v.size() << " " << diff.count() << endl;
+		cout << v.size() << " " << diff.count() << endl;
 	}	
 }
