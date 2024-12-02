@@ -1,0 +1,5 @@
+-std=c++17
+-lnanogui 
+-DNANOGUI_SHARED 
+-DNANOGUI_USE_METAL 
+-DNVG_SHARED
